@@ -1,152 +1,126 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 body {
+  text-align: center;
+  font-size: 24px;
+  line-height: 3;
+}
 
-    margin: 0;
-    
-    margin-top: 50px;
-    font-family: sans-serif;
-    
-    }
-    
-     
-    
-    header {
-    
-    display: flex;
-    
-    position: fixed;
-    
-    top: 0;
-    
-    left: 0;
-    
-    right: 0;
-    
-    height: 50px;
-    
-    line-height: 50px;
-    
-    background-color: #eee;
-    
-    }
-    
-     
-    
-    header * {
-    
-    display: inline;
-    
-    height: 50px;
-    
-    }
-    
-     
-    
-    header ul {
-    
-    padding: 0;
-    
-    }
-    
-     
-    
-    header li {
-    
-    margin-left: 20px;
-    
-    }
-    
-     
-    
-    section {
-    
-    height: 100vh;
-    
-    border: 1px solid black;
-    
-    display: flex;
-    
-    justify-content: center;
-    
-    align-items: center;
-    
-    text-align: center;
+header {
+  background-origin: content-box;
+  display: inline-flex;
+  height: 20px;
+}
 
-    background-size: cover; /* Add this line */
+header * {
+  display: inline;
 
-    background-position: center center; /* Add this line */
+  height: 70px;
+  position: fixed;
+  z-index: 99;
+}
 
-    background-repeat: no-repeat; /* Add this line */
+header ul {
+  padding: 0;
+}
 
-    background-attachment: fixed; /* Add this line */
-    
-    }
-    
-     
-    
-    #hero .profile-img {
-    width: 300px;
-    border-radius: 50%;
-    }
-    
-     
-    
-    footer {
-    
-    text-align: center;
-    
-    padding: 50px;
-    
-    }
+header li {
+  margin-left: 20px;
+}
 
-    #hero h1 {
+section {
+  height: 50vh;
 
-        font-size: 3em;
-        
-        }
-        
-         
-        
-        section h2 {
-        
-        font-size: 2.5em;
-        
-        }
-        
-         
-        
-        section h3 {
-        
-        font-size: 1.5em;
-        
-        }
-        
-         
-        
-        header a {
-        
-        text-decoration: none;
-        
-        color: black;
-        
-        }
-        #hero {
+  border: 1px solid black;
 
-            background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url("assest/images/20190930ECbridge.jpg")
-        
-        }
-        
-         
-        
-        #about {
-        
-            background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url(‘https://scontent.fcgk18-2.fna.fbcdn.net/v/t1.0-9/60232304_10219096916964612_1350888178050924544_n.jpg?_nc_cat=100&_nc_ht=scontent.fcgk18-2.fna&oh=72784f19fd9cf8cf9ca99d7dfc53735b&oe=5D54C31C‘);
-        
-        }
-        
-         
-        
-        #contact {
-        
-            background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url(‘https://scontent-sin6-1.xx.fbcdn.net/v/t1.0-9/60586842_10219096915844584_3123709442135162880_n.jpg?_nc_cat=107&_nc_ht=scontent-sin6-1.xx&oh=870f6e76c4eae89bba33c7ab76d37127&oe=5D554E78‘);
-        
-        }
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  text-align: center;
+
+  background-size: cover; /* Add this line */
+
+  background-position: center center; /* Add this line */
+
+  background-repeat: no-repeat; /* Add this line */
+
+  background-attachment: fixed; /* Add this line */
+}
+
+.container,
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+@media all and (min-width: 768px) {
+  .content {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  main {
+    flex: 3;
+    order: 2;
+    width: 0%;
+  }
+
+  .left-sidebar {
+    order: 1;
+    flex: 1;
+  }
+  .right-sidebar {
+    flex: 1;
+    order: 3;
+  }
+}
+
+footer {
+  text-align: center;
+
+  padding: 50px;
+}
+
+#hero h1 {
+  font-size: 3em;
+}
+
+section h2 {
+  font-size: 2.5em;
+}
+
+section h3 {
+  font-size: 1.5em;
+}
+
+header a {
+  text-decoration: none;
+
+  color: black;
+}
+#hero {
+  position: relative;
+  width: 100vw;
+}
+
+#about {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.75),
+      rgba(255, 255, 255, 0.75)
+    ),
+    url(‘https://scontent.fcgk18-2.fna.fbcdn.net/v/t1.0-9/60232304_10219096916964612_1350888178050924544_n.jpg?_nc_cat=100&_nc_ht=scontent.fcgk18-2.fna&oh=72784f19fd9cf8cf9ca99d7dfc53735b&oe=5D54C31C‘);
+}
+
+#contact {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.75),
+      rgba(255, 255, 255, 0.75)
+    ),
+    url(‘https://scontent-sin6-1.xx.fbcdn.net/v/t1.0-9/60586842_10219096915844584_3123709442135162880_n.jpg?_nc_cat=107&_nc_ht=scontent-sin6-1.xx&oh=870f6e76c4eae89bba33c7ab76d37127&oe=5D554E78‘);
+}
