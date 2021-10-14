@@ -5,30 +5,32 @@
 }
 body {
   text-align: center;
-  font-size: 24px;
   line-height: 3;
+  width: 100%;
 }
 
 header {
-  background-origin: content-box;
-  display: inline-flex;
-  height: 20px;
+  width: 100%;
+  background-image: url("./images/IMG_20180821Hawaii.jpg");
+
+  background-size: cover;
 }
 
+#heropic {
+  width: 100%;
+}
 header * {
-  display: inline;
-
-  height: 70px;
-  position: fixed;
   z-index: 99;
 }
 
 header ul {
-  padding: 0;
+  padding: 5px;
+  display: flex;
 }
 
 header li {
   margin-left: 20px;
+  list-style-type: none;
 }
 
 section {
@@ -111,16 +113,14 @@ header a {
 
 #about {
   background-image: linear-gradient(
-      rgba(255, 255, 255, 0.75),
-      rgba(255, 255, 255, 0.75)
-    ),
-    url(‘https://scontent.fcgk18-2.fna.fbcdn.net/v/t1.0-9/60232304_10219096916964612_1350888178050924544_n.jpg?_nc_cat=100&_nc_ht=scontent.fcgk18-2.fna&oh=72784f19fd9cf8cf9ca99d7dfc53735b&oe=5D54C31C‘);
+    rgba(255, 255, 255, 0.75),
+    rgba(255, 255, 255, 0.75)
+  );
 }
 
 #contact {
   background-image: linear-gradient(
-      rgba(255, 255, 255, 0.75),
-      rgba(255, 255, 255, 0.75)
-    ),
-    url(‘https://scontent-sin6-1.xx.fbcdn.net/v/t1.0-9/60586842_10219096915844584_3123709442135162880_n.jpg?_nc_cat=107&_nc_ht=scontent-sin6-1.xx&oh=870f6e76c4eae89bba33c7ab76d37127&oe=5D554E78‘);
+    rgba(255, 255, 255, 0.75),
+    rgba(255, 255, 255, 0.75)
+  );
 }
