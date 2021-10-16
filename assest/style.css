@@ -7,11 +7,11 @@ body {
   text-align: center;
   line-height: 3;
   width: 100%;
+  background-image: url("./images/IMG_20180821Hawaii.jpg");
 }
 
 header {
   width: 100%;
-  background-image: url("./images/IMG_20180821Hawaii.jpg");
 
   background-size: cover;
 }
@@ -85,6 +85,7 @@ section {
 
 footer {
   text-align: center;
+  background-position: center;
 
   padding: 50px;
 }
@@ -112,15 +113,23 @@ header a {
 }
 
 #about {
-  background-image: linear-gradient(
-    rgba(255, 255, 255, 0.75),
-    rgba(255, 255, 255, 0.75)
-  );
+  background-image: ;
 }
 
 #contact {
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     rgba(255, 255, 255, 0.75),
-    rgba(255, 255, 255, 0.75)
-  );
+    rgba(255, 255, 255, 0.75)); */
+
+  background-image: url(./images/20190930ECbridge.jpg);
+
+  /* background-position: top; */
+  background-size: cover;
+}
+
+div.section-inner {
+  opacity: 0.4;
+  font-weight: bold;
+  background-color: #ffff;
+  color: #000000;
 }
